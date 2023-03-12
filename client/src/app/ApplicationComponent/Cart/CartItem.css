@@ -1,0 +1,23 @@
+.input--quantity {
+  width: 70px;
+}
+.tg .tg--remove {
+  border: none;
+}
+.tg .remove--btn {
+  width: 30px;
+  height: 30px;
+  background: #dc3545;
+  outline: none;
+  margin-left: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--color-secondary);
+  font-weight: 500;
+  transition: 0.15s;
+}
+.tg .remove--btn:hover {
+  transform: scale(1.05);
+}

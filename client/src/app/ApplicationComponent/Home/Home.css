@@ -1,0 +1,15 @@
+.home--layout {
+  position: relative;
+  box-sizing: border-box;
+  /* padding: 100px 60px 0px; */
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 95px auto;
+}

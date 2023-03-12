@@ -1,0 +1,73 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo {
+  font-size: 2em;
+  /* color: var(--color-secondary); */
+  color: var(--color-primary);
+  font-weight: 600;
+  user-select: none;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  /* color: var(--color-secondary); */
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation .hello-user {
+  position: relative;
+  font-size: 1.2em;
+  /* color: var(--color-secondary); */
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-left: 40px;
+  pointer-events: none;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btn__login--popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  outline: none;
+  border-radius: 6px;
+  /* color: var(--color-secondary); */
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .btn__login--popup:hover {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
